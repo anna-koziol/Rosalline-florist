@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1.4em;
+    vertical-align: baseline;
+    text-decoration: none;
+    outline: 0;
+    overflow-x: hidden;
+}
+
+*:focus, *:hover {
+    outline: none;
+}
+
+body {
+    background-color: rgba(228, 228, 228, 0.1);
+    text-align: center;
+    font-family: 'Lora', serif;
+}
+
+.center-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#intro {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../gfx/anna-111431-unsplash.jpg");
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+}
+
+#box-intro {
+    background-color: white;
+    width: 20vw;
+    height: 40vh;
+    padding: 1%;
+    outline: 4px solid white;
+    outline-offset: 20px;
+}
+
+.cursive {
+    font-family: 'Great Vibes', cursive;
+}
+
+h1 {
+    font-size: 400%;
+    margin-bottom: 20%;
+    color: #E4CDD9;
+    padding: 10%;
+}
+
+span, h1, p, h4, h2, h5 {
+    overflow-y: hidden;
+}
+
+.icon {
+    width: 30%;
+}
+
+.margin-section {
+    margin-top: 10%;
+}
+
+h4 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 200%;
+}
+
+.block {
+    padding: 2%;
+    background: #F1D8E5;
+    border-top: 2px solid white;
+}
+
+.block:nth-child(2) {
+    background: #E4CDD9;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+
+.block:nth-child(3) {
+    background: #CAB6C1;
+}
+
+h4 {
+    padding: 2%;
+}
+
+h2 {
+    padding-top: 5%;
+    font-size: 300%;
+}
+
+.flowers-border {
+    margin-top: 5%;
+    width: 50%;
+}
+
+.full-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about, h6 {
+    text-align: center;
+}
+
+#products {
+    background: #E4CDD9;
+}
+
+h6 {
+    padding-bottom: 5%;
+    font-size: 105%;
+    text-transform: uppercase;
+}
+
+/*
+Photo by Thomas AE on Unsplash
+Photo by Orio Nguyen on Unsplash
+Photo by Sweet Ice Cream Photography on Unsplash
+*/
+
+#product1 {
+    background-image: url("../gfx/cinematic-imagery-610223-unsplash.jpg")
+}
+
+#product2 {
+    background-image: url("../gfx/kelly-sikkema-364377-unsplash.jpg")
+}
+
+#product3 {
+    background-image: url("../gfx/sweet-ice-cream-photography-123164-unsplash.jpg")
+}
+
+#product4 {
+    background-image: url("../gfx/orio-nguyen-266209-unsplash.jpg")
+}
+
+#product5 {
+    background-image: url("../gfx/thomas-ae-602202-unsplash.jpg")
+}
+
+#product6 {
+    background-image: url("../gfx/davids-kokainis-495285-unsplash.jpg")
+}
+
+.products {
+    height: 30vw;
+    border: 5px solid #E4CDD9;
+    position: relative;
+    background-position: center;
+}
+
+#product6 {
+    margin-bottom: 5%;
+}
+
+.product-info {
+    padding: 5%;
+    background-color: white;
+    outline: 4px solid white;
+    outline-offset: 10px;
+    width: 50%;
+    height: 50%;
+    opacity: 0;
+}
+
+h5 {
+    font-size: 200%;
+    margin-bottom: 20%;
+    padding: 1%;
+}
+
+.gray {
+    -webkit-filter: grayscale(80%);
+    filter: grayscale(80%);
+    transition: 1s;
+}
+
+.outer-div {
+    height: 30vh;
+    width: 30vw;
+    overflow: hidden;
+}
+
+.inner-div {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s ease;
+    background-image: url('http://www.tipue.com/img/yes.jpg');
+}
+
+.inner-div:hover {
+    transform: scale(1.2);
+}
+
+.scale-block {
+    -webkit-animation: scale-block 1s cubic-bezier(0.2, 0.6, 0.3, 1) both;
+    animation: scale-block 1s cubic-bezier(0.2, 0.6, 0.3, 1) both;
+}
+
+@-webkit-keyframes scale-block {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes scale-block {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 0px;
+    height: 100%;
+    position: relative;
+}
+
+.card-title {
+    font-size: 110%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    text-transform: uppercase;
+}
+
+.card-text {
+    padding: 10%;
+    color: rgb(117, 117, 117);
+    margin-bottom: 20%;
+}
+
+.gallery-button {
+    padding: 2%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border: 1px solid black;
+    width: 40%;
+    font-size: 80%;
+    font-weight: bolder;
+    position: absolute;
+    bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.card-img-top {
+    border-bottom: 1px double black;
+}
+
+.banner-paralax {
+    background-image: url('../gfx/nathalie-jolie-549516-unsplash.jpg');
+    background-attachment: fixed;
+}
+
+.banner-text {
+    color: white;
+    padding: 2%;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.banner-text>h4 {
+    font-size: 400%;
+}
+
+.banner-text>h5 {
+    font-size: 150%;
+}
+
+#banner-call {
+    background-image: url('../gfx/yousef-espanioly-530389-unsplash.jpg');
+    padding: 0%;
+    height: 20%;
+}
+
+#banner-call>.banner-text>h5, #banner-call>.banner-text>h4 {
+    margin: 0;
+    padding: 2%;
+}
