@@ -20,9 +20,11 @@
 
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Lora" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rwd.css">
+    <link rel="stylesheet" href="css/animation.css">
 
     <link rel="shortcut icon" sizes="57x57" href="gfx/peony.png">
-
+    <!--na podstawie http://rosebud.mikado-themes.com/daffodil/-->
 </head>
 
 <body>
@@ -38,19 +40,19 @@
 
         <div class="container-fluid">
             <div class="row">
-                <div class="col-4 block">
+                <div class="col-12 col-sm-4 block">
                     <img src="gfx/gladiola.png" alt="dhalia icon" class="icon">
                     <h4 class="cursive">Wiedza</h4>
                     <p>Od najmłodszych lat każdy z Rosalline interesował się kwiatami, a gdy dorósł - uczęszczał na florystyczne
                         kursy
                     </p>
                 </div>
-                <div class="col-4 block">
+                <div class="col-12 col-sm-4 block">
                     <img src="gfx/calla-lily.png" alt="dhalia icon" class="icon">
                     <h4 class="cursive">Doświadczenie</h4>
                     <p>Jesteśmy na rynku już 5 lat i na swoim koncie mamy ponad 1000 wykonanych bukietów</p>
                 </div>
-                <div class="col-4 block">
+                <div class="col-12 col-sm-4 block">
                     <img src="gfx/peony.png" alt="dhalia icon" class="icon">
                     <h4 class="cursive">Miłość</h4>
                     <p>Kochamy kwiaty i nasza praca to dla nas czysta przyjemność... po prostu</p>
@@ -135,21 +137,21 @@
         </div>
 
         <div class="container-fluid">
-                <div class="row full-img banner-paralax">
-                    <div class="col-4 banner-text">
-                        <h4>50</h4>
-                        <h5>RODZAJÓW KWIATÓW</h5>
-                    </div>
-                    <div class="col-4 banner-text">
-                        <h4>1024</h4>
-                        <h5>ZADOWOLONYCH KLIENTÓW</h5>
-                    </div>
-                    <div class="col-4 banner-text">
-                        <h4>15</h4>
-                        <h5>CERTFIKATÓW</h5>
-                    </div>
+            <div class="row full-img banner-paralax">
+                <div class="col-4 banner-text">
+                    <h4>50</h4>
+                    <h5>RODZAJÓW KWIATÓW</h5>
+                </div>
+                <div class="col-4 banner-text">
+                    <h4>1024</h4>
+                    <h5>ZADOWOLONYCH KLIENTÓW</h5>
+                </div>
+                <div class="col-4 banner-text">
+                    <h4>15</h4>
+                    <h5>CERTFIKATÓW</h5>
                 </div>
             </div>
+        </div>
 
 
         <div class="container margin-section" id="about">
@@ -162,9 +164,9 @@
                         <br> Spełniemy każde Twoje marzenie!
                     </p>
 
-                    <div class="row margin-section">
+                    <div class="row margin-section" id="cards">
 
-                        <div class="col-4">
+                        <div class="col-12 col-md-4">
                             <div class="card">
                                 <img class="card-img-top" src="gfx/rob-sarmiento-596604-unsplash.jpg" alt="Obrazek w karcie">
                                 <div class="card-body">
@@ -173,24 +175,28 @@
                                         Wszystkie zlecenia wykonujemy na indywidualne życzenia klientów. Możesz wybrać któreś z naszych gotowych bukietów lub całkowicie
                                         spersonalizować swój. </p>
 
-                                    <div class="gallery-button">ZOBACZ GALERIĘ</div>
+                                    <div class="gallery-button">
+                                        <a href="gallery.html">ZOBACZ GALERIĘ</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-4">
+                        <div class="col-12 col-md-4">
                             <div class="card">
                                 <img class="card-img-top" src="gfx/evelina-friman-339606-unsplash.jpg" alt="Obrazek w karcie">
                                 <div class="card-body">
                                     <h5 class="card-title">Wystrój</h5>
                                     <p class="card-text">Oprócz klasycznych buketów oferujemy także wystrój kościołów, sal, samochodów.</p>
 
-                                    <div class="gallery-button">ZOBACZ GALERIĘ</div>
+                                    <div class="gallery-button">
+                                        <a href="gallery.html">ZOBACZ GALERIĘ</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-4">
+                        <div class="col-12 col-md-4">
                             <div class="card">
                                 <img class="card-img-top" src="gfx/jeremy-wong-weddings-615245-unsplash.jpg" alt="Obrazek w karcie">
                                 <div class="card-body">
@@ -198,10 +204,13 @@
                                     <p class="card-text">Oferujemy wypożyczenie lampionów na zewnątrz, świec, stojaków na kwiaty, pokryć na krzesła
                                         oraz drewnianych ozdób na ślub.</p>
 
-                                    <div class="gallery-button">ZOBACZ GALERIĘ</div>
+                                    <div class="gallery-button">
+                                        <a href="gallery.html">ZOBACZ GALERIĘ</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
 
                 </div>
@@ -209,21 +218,89 @@
         </div>
 
         <div class="container-fluid margin-section">
-                <div class="row full-img banner-paralax" id="banner-call">
-                    <div class="col banner-text">
-                        <h4>Zadzwoń do nas</h4>
-                        <h5>+12 348 10 45</h5>
-                    </div>
+            <div class="row full-img banner-paralax" id="banner-call">
+                <div class="col banner-text">
+                    <h4>Zadzwoń do nas</h4>
+                    <h5>+12 348 10 45</h5>
                 </div>
             </div>
-            
-
-        <div class="outer-div margin-section">
-            <div class="inner-div"></div>
         </div>
 
-        <p>Published by Freepik License: Flaticon Basic License </p>
+
+        <div class="container margin-section" id="team">
+            <div class="row">
+                <div class="col">
+                    <h2 class="cursive">Nasz skład</h2>
+                    <h6>~ Poznaj nas bliżej ~</h6>
+
+                    <div class="row" id="team-images">
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-6 col-sm-3">
+                                    <div class="square" id="team1"></div>
+                                    <p class="team-name">Rozalia Nowak</p>
+                                    <p class="team-specialization">Dekoratorka</p>
+                                </div>
+
+                                <div class="col-6 col-sm-3">
+                                    <div class="square" id="team2"></div>
+                                    <p class="team-name">Karolina Szpyt</p>
+                                    <p class="team-specialization">Florystka</p>
+                                </div>
+
+                                <div class="col-6 col-sm-3">
+                                    <div class="square" id="team3"></div>
+                                    <p class="team-name">Joanna Kot</p>
+                                    <p class="team-specialization">Florystka</p>
+                                </div>
+
+                                <div class="col-6 col-sm-3">
+                                    <div class="square" id="team4"></div>
+                                    <p class="team-name">Klaudia Szaro</p>
+                                    <p class="team-specialization">Florystka</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid margin-section" id="footer">
+            <h2 class="cursive">Rosalline</h2>
+            <p class="footer-p">Telefon: +12 348 10 45</p>
+            <p class="footer-p">Mail: rosalline_kwiaciarnia@gmail.com</p>
+
+            <div class="row">
+                <div class="col">
+                    <h6>Godziny otwarcia</h6>
+                    <p class="footer-p">Poniedziałek-Piątek: 8-18</p>
+                    <p class="footer-p">Sobota: 8-20</p>
+                    <p class="footer-p">Niedziela: nieczynne</p>
+                </div>
+
+                <img src="gfx/tumblr_oy56rxcb3u1wc2gv3o1_500.png" alt="" id="footer-rose">
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <h6>Adres</h6>
+                    <p class="footer-p" id="adres-p">30-897 Kraków, ul. Kwiecista 21</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-fluid" id="footer2">
+            <p class="footer-p"> &#9400; Anna Kozioł 2018</p>
+        </div>
+
     </div>
+
 </body>
 
 </html>

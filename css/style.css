@@ -38,7 +38,7 @@ body {
 #box-intro {
     background-color: white;
     width: 20vw;
-    height: 40vh;
+    height: 20vw;
     padding: 1%;
     outline: 4px solid white;
     outline-offset: 20px;
@@ -50,7 +50,7 @@ body {
 
 h1 {
     font-size: 400%;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
     color: #E4CDD9;
     padding: 10%;
 }
@@ -185,25 +185,6 @@ h5 {
     transition: 1s;
 }
 
-.outer-div {
-    height: 30vh;
-    width: 30vw;
-    overflow: hidden;
-}
-
-.inner-div {
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    transition: all 0.5s ease;
-    background-image: url('http://www.tipue.com/img/yes.jpg');
-}
-
-.inner-div:hover {
-    transform: scale(1.2);
-}
-
 .scale-block {
     -webkit-animation: scale-block 1s cubic-bezier(0.2, 0.6, 0.3, 1) both;
     animation: scale-block 1s cubic-bezier(0.2, 0.6, 0.3, 1) both;
@@ -304,4 +285,156 @@ h5 {
 #banner-call>.banner-text>h5, #banner-call>.banner-text>h4 {
     margin: 0;
     padding: 2%;
+}
+
+.square:before {
+    content: '';
+    width: 0;
+    display: inline-block;
+    /*vertical-align: middle;*/
+    max-width: 100%;
+    padding-top: 100%;
+}
+
+.square {
+    box-shadow: inset 0 0 0 1px #E4CDD9;
+    border: 1px solid #CAB6C1;
+    background-size: cover;
+}
+
+#team1 {
+    background-image: url("../gfx/tyler-nix-628986-unsplash.jpg");
+}
+
+#team2 {
+    background-image: url("../gfx/easton-oliver-511733-unsplash.jpg");
+}
+
+#team3 {
+    background-image: url("../gfx/rowan-chestnut-175871-unsplash.jpg");
+}
+
+#team4 {
+    background-image: url("../gfx/hian-oliveira-597956-unsplash.jpg");
+}
+
+.team-name {
+    text-transform: uppercase;
+    font-size: 110%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.team-specialization {
+    color: rgb(117, 117, 117);
+    margin-bottom: 30%;
+}
+
+#footer, #footer2 {
+    background-color: rgb(32, 32, 32);
+    color: white;
+    text-align: left;
+    position: relative;
+}
+
+#footer2 {
+    background-color: black;
+    color: rgb(117, 117, 117);
+    text-align: center;
+}
+
+#footer2>p {
+    padding: 2%;
+    margin-bottom: 0rem;
+}
+
+#footer>h2 {
+    margin-bottom: 5%;
+    color: #CAB6C1;
+}
+
+#footer>.row>.col>h6 {
+    text-align: left;
+    margin-top: 2%;
+    padding: 1%;
+    padding-left: 0%;
+    color: #CAB6C1;
+}
+
+#footer-rose {
+    width: auto;
+    height: 40%;
+    opacity: 0.2;
+    position: absolute;
+    bottom: 2%;
+    right: 5%;
+}
+
+#adres-p {
+    margin-bottom: 5%;
+}
+
+/*http://tobiasahlin.com/blog/css-trick-animating-link-underlines/*/
+
+a {
+    position: relative;
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -10%;
+    left: 0;
+    background-color: black;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+#banner {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+#banner>h2>a {
+    text-align: left;
+    color: #CAB6C1 !important;
+    margin: 0;
+}
+
+#banner>h2 {
+    margin: 0;
+    padding-top: 2%;
+}
+
+.img-gallery {
+    box-shadow: inset 0 0 0 1px #E4CDD9;
+    border: 1px solid #CAB6C1;
+    background-position: center;
+    margin-bottom: 15%;
+    filter: grayscale(100%);
+}
+
+.img-gallery:hover {
+    transition: 1s;
+    filter: grayscale(0%);   
 }
